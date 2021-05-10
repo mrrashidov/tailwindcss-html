@@ -1,0 +1,17 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "TAILWIND_MODE=build NODE_ENV=production tailwindcss build ./src/main.css -o ./src/css/main.css",
+    "dev": "yarn build && live-server src --port=8080"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "live-server": "^1.2.1",
+    "postcss": "^8.2.14",
+    "tailwindcss": "^2.1.2",
+    "tailwindcss-cli": "^0.1.2"
+  }
+}
